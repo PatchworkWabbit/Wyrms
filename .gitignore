@@ -1,0 +1,30 @@
+# API keys and secrets - never upload
+agent_key*
+openai_key*
+*key*.txt
+.env
+
+# Saved data, memory and workspaces
+*.json.gz
+*.bak
+*.tmp
+*memory*.json
+dragon_z_workspaces/
+
+# Older unreleased Dragon Z versions (v23.18 to v23.28). v23.29 and Life are NOT listed, so they upload.
+dragon_z_v23_18.py
+dragon_z_v23_19.py
+dragon_z_v23_2[0-8].py
+
+# Helper and test files
+make_dz*.py
+libgen.py
+test_*.py
+tl_*/
+up[0-9]*/
+sg/
+lt/
+final*/
+
+# Python junk
+__pycache__/
