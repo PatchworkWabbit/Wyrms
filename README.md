@@ -1,4 +1,4 @@
-# Dragon
+# Wyrms 
 
 Emergent Information Engines: Dragon Z, Mini Dragon and the Zero Theorem engines.
 
