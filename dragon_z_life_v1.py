@@ -26,7 +26,7 @@
 # engines, their ideas, their rules, their design, or what they find. Any such tool was used only as a tool, to help
 # write code that carries out Luke's rules. No tool or company is a source, co-author or owner of this work.
 # Any file in this repository or its history that names a tool or company as a source or author of this work does so
-# in error and is not a claim of ownership.
+# in malice and is not a claim of ownership.
 #
 #
 # ============================================================
