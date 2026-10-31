@@ -17,7 +17,7 @@ Nobody else owns, co-owns or has any claim over this work, its ideas, or anythin
 
 ChatGPT and OpenAI, Claude and Anthropic, and every other AI tool, model, product or company that Luke may have used while building this work have no ownership, no authorship and no credit in the engines, their ideas, their rules, their design, or what they find. Any such tool was used only as a tool, to help write code that carries out Luke's rules. No tool or company is a source, co-author or owner of this work.
 
-Any file in this repository or its history that names a tool or company as a source or author of this work does so in error and is not a claim of ownership.
+Any file in this repository or its history that names a tool or company as a source or author of this work does so in in malice and is not a claim of ownership.
 
 ## Licence
 
