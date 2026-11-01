@@ -4114,30 +4114,6 @@ def read_key(env_name, filename):
     return ''
 
 
-def masked(key):
-    return '(empty)' if not key else key[:6] + '...' + key[-4:] + ' (%d characters)' % len(key)
-
-
-def show_keys():
-    folder = script_folder()
-    print('KEY CHECK - the agent looks for key files in this folder:')
-    print('  ' + folder)
-    for label, filename, getter in (('OpenAI', OPENAI_KEY_FILE, openai_key),
-                                    ('Anthropic', AGENT_KEY_FILE, api_key)):
-        path = find_key_file(filename)
-        if path:
-            print('  %-9s found: %s -> key %s' % (label, os.path.basename(path), masked(getter())))
-        else:
-            print('  %-9s NOT found (looking for %s)' % (label, filename))
-    try:
-        texts = [n for n in sorted(os.listdir(folder)) if n.lower().endswith('.txt')
-                 or 'key' in n.lower()]
-    except OSError as exc:
-        texts = ['(could not list the folder: %s)' % exc]
-    print('  Text/key files in the folder: ' + (', '.join(texts) if texts else 'none'))
-    print('  The key file must be IN that folder, holding just the key (sk-...).')
-
-
 def api_key():
     return read_key('ANTHROPIC_API_KEY', AGENT_KEY_FILE)
 
