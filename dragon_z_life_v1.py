@@ -710,18 +710,6 @@ def openai_key():
     return read_key('OPENAI_API_KEY', OPENAI_KEY_FILE)
 
 
-def masked(key):
-    return '(empty)' if not key else key[:6] + '...' + key[-4:] + ' (%d characters)' % len(key)
-
-
-def show_keys():
-    print('KEY CHECK - key files are looked for in: ' + HERE)
-    for label, filename, getter in (('OpenAI', OPENAI_KEY_FILE, openai_key), ('Anthropic', AGENT_KEY_FILE, api_key)):
-        path = find_key_file(filename)
-        print('  %-9s %s' % (label, ('found: %s -> key %s' % (os.path.basename(path), masked(getter()))) if path
-                             else 'NOT found (looking for %s)' % filename))
-
-
 def pick_brain(a):
     choice = a.get('brain_choice', AGENT_BRAIN)
     has = {'claude': bool(api_key()), 'openai': bool(openai_key())}
